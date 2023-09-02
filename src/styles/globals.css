@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  h1 {
+    font-family: "Monument Extended";
+  }
+
+  .font-thin {
+    font-variation-settings: "wght" 100;
+  }
+  .font-extralight {
+    font-variation-settings: "wght" 200;
+  }
+  .font-light {
+    font-variation-settings: "wght" 300;
+  }
+  .font-normal {
+    font-variation-settings: "wght" 400;
+  }
+  .font-medium {
+    font-variation-settings: "wght" 500;
+  }
+  .font-semibold {
+    font-variation-settings: "wght" 600;
+  }
+  .font-bold {
+    font-variation-settings: "wght" 700;
+  }
+  .font-extrabold {
+    font-variation-settings: "wght" 800;
+  }
+  .font-black {
+    font-variation-settings: "wght" 900;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+  }
+}
+
+@font-face {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Monument Extended"),
+    url("https://fonts.cdnfonts.com/s/19595/MonumentExtended-Regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Monument Extended"),
+    url("https://fonts.cdnfonts.com/s/19595/MonumentExtended-Ultrabold.woff")
+      format("woff");
+}
+
+.underlined {
+  background: linear-gradient(#ffd17f, #ffd17f) 0 var(--y-pos, 90%) / 100%
+    var(--size, 12px) no-repeat;
+}
+
+.offset-border {
+  border: 3px solid #000000;
+
+  border-radius: 4px;
+}
+
+.offset-border h3 {
+  line-height: 1.5;
+}
+.offset-border img {
+  margin: auto;
+}
+
+.bg-curvature {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.noise {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  opacity: 0.03;
+  width: 100%;
+  height: 100%;
+  background: url("/section1/Noise.gif");
+  pointer-events: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  cursor: url("/pointer.svg"), auto !important;
+  scroll-behavior: smooth;
+}
+
+.speakers {
+  scroll-behavior: smooth;
+  cursor: grab;
+}
+
+.speakers:active {
+  cursor: grabbing;
+}
+
+button:hover {
+  cursor: url("/pointinghand.svg"), pointer !important;
+}
+a:hover {
+  cursor: url("/pointinghand.svg"), pointer !important;
+}
+
+.cursor-pointer {
+  cursor: url("/pointinghand.svg"), pointer !important;
+}
+
+.markdown p {
+  margin-bottom: 18px;
+}
+
+.markdown ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 18px;
+}
+
+.markdown table {
+  margin-bottom: 18px;
+  font-size: 14px;
+}
